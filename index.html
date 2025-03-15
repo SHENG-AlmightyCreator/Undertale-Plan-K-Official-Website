@@ -74,10 +74,18 @@
         }
 
         nav ul li a:hover {
-            color: #00aaff;
+            color: #87CEFA;
         }
 
         nav ul li a:hover::after {
+            transform: scaleX(1);
+        }
+
+        nav ul li a.active {
+            color: #00aaff;
+        }
+
+        nav ul li a.active::after {
             transform: scaleX(1);
         }
 
@@ -110,6 +118,7 @@
             padding: 100px 20%;
             text-align: center;
             animation: fadeIn 1s ease-out 1s both;
+            display: none;
         }
 
         @keyframes fadeIn {
@@ -137,6 +146,7 @@
             padding: 100px 20%;
             text-align: center;
             animation: fadeIn 1s ease-out 1.2s both;
+            display: none;
         }
 
         #download h2 {
@@ -165,13 +175,6 @@
             background-color: #0088cc;
         }
 
-        /* 页脚样式 */
-        footer {
-            background-color: #222;
-            text-align: center;
-            padding: 20px;
-        }
-
         /* 中文文字样式 */
         .chinese-char {
             letter-spacing: 0.2em;
@@ -179,63 +182,189 @@
         }
 
         /* 所有文字添加黑色描边 */
-        h1, h2, p, a, span {
+        h1,
+        h2,
+        p,
+        a,
+        span {
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+        /* 语言切换下拉列表样式 */
+        #language-dropdown {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        #language-dropdown .selected {
+            background-color: #333;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        #language-dropdown .options {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: #333;
+            border-radius: 3px;
+            overflow: hidden;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        #language-dropdown .options.show {
+            display: block;
+        }
+
+        #language-dropdown .option {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        #language-dropdown .option:hover {
+            background-color: #555;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 
 <body>
+    <div id="language-dropdown">
+        <div class="selected">中文</div>
+        <div class="options">
+            <div class="option" data-lang="zh">中文</div>
+            <div class="option" data-lang="en">English</div>
+        </div>
+    </div>
     <div id="logo-container">
         <img src="images/upklogo.png" alt="Undertale Plan K Logo">
     </div>
     <nav>
         <ul>
-            <li><a href="#">首页</a></li>
-            <li><a href="#">游戏介绍</a></li>
-            <li><a href="#">更新日志</a></li>
-            <li><a href="#">下载中心</a></li>
-            <li><a href="#">社区论坛</a></li>
-            <li><a href="#">联系我们</a></li>
+            <li><a href="#" data-lang-zh="首页" data-lang-en="Home" class="active">首页</a></li>
+            <li><a href="#" data-lang-zh="游戏介绍" data-lang-en="Game Intro">游戏介绍</a></li>
+            <li><a href="#" data-lang-zh="更新日志" data-lang-en="Update Log">更新日志</a></li>
+            <li><a href="#" data-lang-zh="下载中心" data-lang-en="Downloads">下载中心</a></li>
+            <li><a href="#" data-lang-zh="社区论坛" data-lang-en="Community Forum">社区论坛</a></li>
+            <li><a href="#" data-lang-zh="联系我们" data-lang-en="Contact Us">联系我们</a></li>
         </ul>
     </nav>
-    <!-- 移除了“开启 Undertale Plan K 的奇幻之旅” -->
     <section id="game-intro">
-        <h2>游戏介绍</h2>
-        <p>《Undertale Plan K》是一款充满奇幻色彩的像素风角色扮演游戏，它延续了《Undertale》的经典风格，拥有独特的剧情和丰富的角色。在游戏中，你将扮演主角，探索神秘的地下世界，与各种奇特的怪物展开战斗，同时还能解开隐藏在背后的秘密。游戏的战斗系统独具特色，玩家可以选择和平解决冲突，也可以展开激烈的战斗，不同的选择将带来不同的结局。快来加入这场冒险，书写属于你自己的故事吧！</p>
+        <h2 data-lang-zh="游戏介绍" data-lang-en="Game Intro">游戏介绍</h2>
+        <p data-lang-zh="《Undertale Plan K》是一款充满奇幻色彩的像素风角色扮演游戏，它延续了《Undertale》的经典风格，拥有独特的剧情和丰富的角色。在游戏中，你将扮演主角，探索神秘的地下世界，与各种奇特的怪物展开战斗，同时还能解开隐藏在背后的秘密。游戏的战斗系统独具特色，玩家可以选择和平解决冲突，也可以展开激烈的战斗，不同的选择将带来不同的结局。快来加入这场冒险，书写属于你自己的故事吧！" data-lang-en="Undertale Plan K is a pixel - art RPG full of fantasy. It follows the classic style of Undertale, with a unique story and a bunch of interesting characters. In the game, you'll play as the main character, explore the mysterious underground world, fight all kinds of strange monsters, and uncover the secrets hidden behind. The combat system is really special. You can either solve conflicts peacefully or engage in intense battles. Different choices lead to different endings. Come on and join this adventure to create your own story!">《Undertale Plan K》是一款充满奇幻色彩的像素风角色扮演游戏，它延续了《Undertale》的经典风格，拥有独特的剧情和丰富的角色。在游戏中，你将扮演主角，探索神秘的地下世界，与各种奇特的怪物展开战斗，同时还能解开隐藏在背后的秘密。游戏的战斗系统独具特色，玩家可以选择和平解决冲突，也可以展开激烈的战斗，不同的选择将带来不同的结局。快来加入这场冒险，书写属于你自己的故事吧！</p>
     </section>
     <section id="download">
-        <h2>下载中心</h2>
-        <p>点击下方链接下载《Undertale Plan K》：</p>
-        <a href="#" class="download-button">Windows 版本下载</a>
-        <a href="#" class="download-button">Mac 版本下载</a>
+        <h2 data-lang-zh="下载中心" data-lang-en="Downloads">下载中心</h2>
+        <p data-lang-zh="点击下方链接下载《Undertale Plan K》：" data-lang-en="Click the links below to download Undertale Plan K:">点击下方链接下载《Undertale Plan K》：</p>
+        <a href="#" class="download-button" data-lang-zh="Windows 版本下载" data-lang-en="Download for Windows">Windows 版本下载</a>
+        <a href="#" class="download-button" data-lang-zh="Mac 版本下载" data-lang-en="Download for Mac">Mac 版本下载</a>
     </section>
-    <footer>
-        <p>&copy; 2025 Undertale Plan K 版权所有</p>
-    </footer>
     <script>
-        // 获取所有需要处理的文本元素，这里选择了 h1、h2、p 和 a 标签元素
-        const textElements = document.querySelectorAll('h1, h2, p, a');
+        const languageDropdown = document.getElementById('language-dropdown');
+        const selected = languageDropdown.querySelector('.selected');
+        const options = languageDropdown.querySelector('.options');
+        const optionItems = languageDropdown.querySelectorAll('.option');
+        const elements = document.querySelectorAll('[data-lang-zh]');
+        const navLinks = document.querySelectorAll('nav ul li a');
+        const gameIntroSection = document.getElementById('game-intro');
+        const downloadSection = document.getElementById('download');
+        let currentLang = 'zh';
 
-        // 遍历每个获取到的文本元素
+        // 显示下拉列表
+        selected.addEventListener('click', function () {
+            options.classList.toggle('show');
+        });
+
+        // 选择语言
+        optionItems.forEach(option => {
+            option.addEventListener('click', function () {
+                const lang = this.getAttribute('data-lang');
+                currentLang = lang;
+                selected.textContent = this.textContent;
+                options.classList.remove('show');
+
+                elements.forEach(element => {
+                    if (lang === 'zh') {
+                        element.textContent = element.getAttribute('data-lang-zh');
+                    } else {
+                        element.textContent = element.getAttribute('data-lang-en');
+                    }
+                });
+
+                // 重新处理中文字符
+                const textElements = document.querySelectorAll('h1, h2, p, a');
+                textElements.forEach(element => {
+                    const text = element.textContent;
+                    let newText = '';
+                    for (let i = 0; i < text.length; i++) {
+                        const char = text[i];
+                        if (/[\u4e00-\u9fa5]/.test(char)) {
+                            newText += `<span class="chinese-char">${char}</span>`;
+                        } else {
+                            newText += char;
+                        }
+                    }
+                    element.innerHTML = newText;
+                });
+            });
+        });
+
+        // 点击页面其他地方隐藏下拉列表
+        document.addEventListener('click', function (event) {
+            if (!languageDropdown.contains(event.target)) {
+                options.classList.remove('show');
+            }
+        });
+
+        // 导航栏点击事件
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                navLinks.forEach(navLink => {
+                    navLink.classList.remove('active');
+                });
+                this.classList.add('active');
+
+                if (this.textContent === '游戏介绍' || (currentLang === 'en' && this.textContent === 'Game Intro')) {
+                    gameIntroSection.style.display = 'block';
+                    downloadSection.style.display = 'none';
+                } else if (this.textContent === '下载中心' || (currentLang === 'en' && this.textContent === 'Downloads')) {
+                    gameIntroSection.style.display = 'none';
+                    downloadSection.style.display = 'block';
+                } else {
+                    gameIntroSection.style.display = 'none';
+                    downloadSection.style.display = 'none';
+                }
+            });
+        });
+
+        // 初始中文字符处理
+        const textElements = document.querySelectorAll('h1, h2, p, a');
         textElements.forEach(element => {
-            // 获取当前元素的文本内容
             const text = element.textContent;
-            // 用于存储处理后的新文本
             let newText = '';
-            // 遍历文本中的每一个字符
             for (let i = 0; i < text.length; i++) {
                 const char = text[i];
-                // 使用正则表达式检查当前字符是否为中文字符
                 if (/[\u4e00-\u9fa5]/.test(char)) {
-                    // 如果是中文字符，用 <span> 标签包裹并添加 chinese-char 类名
                     newText += `<span class="chinese-char">${char}</span>`;
                 } else {
-                    // 如果不是中文字符，直接添加到新文本中
                     newText += char;
                 }
             }
-            // 将处理后的新文本更新到元素的 innerHTML 中
             element.innerHTML = newText;
         });
     </script>
