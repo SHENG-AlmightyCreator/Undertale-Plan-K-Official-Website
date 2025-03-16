@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Undertale Plan K官方网站</title>
-    <link rel="icon" href="images/upklogo.png" type="image/png">
+    <link rel="icon" href="images/icon.png" type="image/png">
     <style>
         /* 引入自定义字体 */
         @font-face {
@@ -23,6 +23,8 @@
             overflow-x: hidden;
             opacity: 0;
             transition: opacity 1s ease;
+            /* 设置全局文字的行距 */
+            line-height: 1.6; 
         }
 
         body.loaded {
@@ -291,6 +293,31 @@
         span {
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
         }
+
+        /* 游戏剧情及设定集样式 */
+        #game-story-and-setting {
+            padding: 50px 10%;
+            background-color: #222;
+            margin-top: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+            display: none;
+        }
+
+        #game-story-and-setting h2 {
+            color: #00aaff;
+            margin-top: 30px;
+        }
+
+        #game-story-and-setting h3 {
+            color: #87CEFA;
+            margin-top: 20px;
+        }
+
+        /* 确保所有元素允许换行 */
+        * {
+            white-space: normal;
+        }
     </style>
 </head>
 
@@ -311,6 +338,7 @@
             <li><a href="#" data-lang-zh="游戏介绍" data-lang-en="Game Intro">游戏介绍</a></li>
             <li><a href="#" data-lang-zh="更新日志" data-lang-en="Update Log">更新日志</a></li>
             <li><a href="#" data-lang-zh="下载中心" data-lang-en="Downloads">下载中心</a></li>
+            <li><a href="#" data-lang-zh="游戏剧情及设定集" data-lang-en="Game Story & Setting" id="show-story-setting">游戏剧情及设定集</a></li>
             <li><a href="#" data-lang-zh="社区论坛" data-lang-en="Community Forum">社区论坛</a></li>
             <li><a href="#" data-lang-zh="联系我们" data-lang-en="Contact Us">联系我们</a></li>
         </ul>
@@ -328,6 +356,353 @@
         <a href="#" class="download-button" data-lang-zh="Windows版本下载" data-lang-en="Download for Windows">Windows版本下载</a>
         <a href="#" class="download-button" data-lang-zh="Mac版本下载" data-lang-en="Download for Mac">Mac版本下载</a>
     </section>
+    <div id="game-story-and-setting">
+        <!-- 以下是从 PDF 提取的文案部分，你需要替换成实际内容 -->
+        <h1 data-lang-zh="Undertale Plan K游戏剧情及设定" data-lang-en="Undertale Plan K - Game Story & Setting">Undertale Plan K游戏剧情及设定</h1>
+        <h2 data-lang-zh="开篇设定" data-lang-en="Initial Settings">开篇设定</h2>
+        <p data-lang-zh="由于sans有重力系统，在202X年的某一天，Sans开始经历突发性的重力波动，这些波动虽微弱却频繁，它们并不符合已知的自然规律或是已观测到的魔法活动。这种不同寻常的现象让他心中生疑，感觉到地底世界乃至整个宇宙的平衡正处于一个微妙而危险的节点。于是他顺着这股感觉找到了一个神秘人。那个神秘人(Gaster)告诉了Sans许多关于时间线的问题，这让Sans十分生气，他向Gaster保证自己一定会执行这个计划的，最终确定：UNDERTALE PLAN：K正式开始执行" data-lang-en="Replace with the exact English text for the initial settings from the PDF">由于sans有重力系统，在202X年的某一天，Sans开始经历突发性的重力波动，这些波动虽微弱却频繁，它们并不符合已知的自然规律或是已观测到的魔法活动。这种不同寻常的现象让他心中生疑，感觉到地底世界乃至整个宇宙的平衡正处于一个微妙而危险的节点。于是他顺着这股感觉找到了一个神秘人。那个神秘人(Gaster)告诉了Sans许多关于时间线的问题，这让Sans十分生气，他向Gaster保证自己一定会执行这个计划的，最终确定：UNDERTALE PLAN：K正式开始执行</p>
+        <h2 data-lang-zh="人物设定" data-lang-en="Character Settings">人物设定</h2>
+        <!-- 依次按照人物设定部分替换文案 -->
+        <h3 data-lang-zh="Kais - Frisk（主角）" data-lang-en="Kais - Frisk (Protagonist)">Kais - Frisk（主角）</h3>
+        <p data-lang-zh="姓名：Kais-Frisk(凯斯 - 弗里斯克)<br>性别：女<br>身份：Chara的妹妹<br>年龄：16<br>技能：存档、滑行、召唤(不常用)，以及原版的四个按键，新增了“MAGIC”选项<br>来源：Gaster与Alphys在原Frisk的基础上改动了Frisk的设定。起初，二人出于对地下世界平衡的考量，本想削弱Frisk的能力，以防其对现有秩序造成过大冲击。然而，考虑到Toby Fox强调的要保持游戏的公平性，确保玩家在冒险过程中有足够的挑战与应对手段，最终还是对她的能力进行了适度加强，使她成为了如今这个充满潜力与惊喜的主角。<br>等级最低以及最高级：LV1，LV9<br>性格特点：看似慵懒随性，实则内心坚韧。平日里总是眯着眼睛，给人一种漫不经心的感觉，仿佛世间诸事都难以激起她的波澜，但在关键时刻，她的眼神会瞬间锐利如鹰，展现出超乎常人的果敢与决断。<br>额外小设定：<br>*Kais - Frisk的披风在关键时刻可以救她<br>*Kais - Frisk的披风致敬了Super Mario World<br>*Kais - Frisk可能知道玩家是存在的，她有时会把头转向屏幕<br>*Kais - Frisk只会在认真的时候睁开<br>*Kais - Frisk使用MAGIC(这个选项和三角符文的差不多)，只不过每次战斗会限制次数，并且三回合之后才可使用" data-lang-en="Replace with the exact English text for Kais - Frisk's character setting from the PDF">姓名：Kais-Frisk(凯斯 - 弗里斯克)<br>性别：女<br>身份：Chara的妹妹<br>年龄：16<br>技能：存档、滑行、召唤(不常用)，以及原版的四个按键，新增了“MAGIC”选项<br>来源：Gaster与Alphys在原Frisk的基础上改动了Frisk的设定。起初，二人出于对地下世界平衡的考量，本想削弱Frisk的能力，以防其对现有秩序造成过大冲击。然而，考虑到Toby Fox强调的要保持游戏的公平性，确保玩家在冒险过程中有足够的挑战与应对手段，最终还是对她的能力进行了适度加强，使她成为了如今这个充满潜力与惊喜的主角。<br>等级最低以及最高级：LV1，LV9<br>性格特点：看似慵懒随性，实则内心坚韧。平日里总是眯着眼睛，给人一种漫不经心的感觉，仿佛世间诸事都难以激起她的波澜，但在关键时刻，她的眼神会瞬间锐利如鹰，展现出超乎常人的果敢与决断。<br>额外小设定：<br>*Kais - Frisk的披风在关键时刻可以救她<br>*Kais - Frisk的披风致敬了Super Mario World<br>*Kais - Frisk可能知道玩家是存在的，她有时会把头转向屏幕<br>*Kais - Frisk只会在认真的时候睁开<br>*Kais - Frisk使用MAGIC(这个选项和三角符文的差不多)，只不过每次战斗会限制次数，并且三回合之后才可使用<br>*Kais-Frisk在伊波特山坠落时没摔，是靠披风滑下来的<br>
+            *Kais-Frisk与Kais-Chara的关系不算太好</p>
+        <h3 data-lang-zh="Kais - sans" data-lang-en="Kais - sans">Kais - sans</h3>
+        <p data-lang-zh="姓名：Kais-sans(凯斯-衫斯)
+        性别：男身份：Kais-Papyrus的哥哥/兄弟
+        年龄：22爱好：喜欢喝橙汁
+        技能：真刀骨头(蓝橙白)、Gaster Blaster(龙骨炮)、重力控制与
+        初始见面地：Snowdin雪镇
+        来源：Sans与Gaster交易过后，Gaster在Sans的基础上，把原来的
+        Frisk的一些能力融合至Sans体内，使Sans有了真刀，眼睛变为蓝色，
+        也拥有了控狱瞳，可是使用有副作用。他甚至因此获得了少许决心，也有一
+        点上个时间线的记忆(原UT中的)，但不多
+        性格特点：
+        表面上看起来随性洒脱，甚至有些玩世不恭，常挂着懒洋洋的笑容，对很多
+        事情都一副满不在乎的样子,但实际上，他内心敏感且重情，尤其是对
+        Kais-Papyrus的关爱无微不至，只是不轻易表露。
+        他有着自己的原则与底线，虽然看似对什么都不较真，但一旦涉及到关乎地
+        下世界存亡或是亲人朋友的安危，他便会瞬间收起那副慵懒模样，展现出超
+        乎常人的果敢与智慧，毫不犹豫地挺身而出。
+        额外小设定：
+        *Kais-sans首次出现在雪镇，且会有遭遇战
+        *Kais-sans的蓝色审判眼由于体内发生的改变，而变成了红色的控狱瞳，而且
+        Kais-sans使用控狱瞳的时间长的话会暂时失去理智且对身体带来巨大的副作用，
+        一旦开始使用就是在慢慢地消耗生命，这是Gaster警告过地
+        *Kais-sans与原版一样欠Grillby的钱
+        *Kais-sans的围巾是Kais-Papyrus送的，在后续Kais-sans给它打了个
+        结
+        *Kais-sans可以利用真刀创造传送门然后瞬间移动（使用意念），可以在UPK内
+        部传送，也可以传送到其他的AU，但是原UT的传送会被阻拦
+        *Kais-sans在审判战的时候可以做到降低你的血量上限，也可以增加，只要他
+        想
+        *Kais-sans没有原版Sans那么懒，但是不勤快
+        *Kais-sans讨厌AMONG US(蛤？)
+        *Kais-sans有一次装睡时Kais-Papyrus要叫他的时被Kais-sans吓到了
+        (草)
+        *Kais-sans的重力控制可以控制自己的重力" data-lang-en="Replace with the exact English text for Kais - Frisk's character setting from the PDF">姓名：Kais-sans(凯斯-衫斯)
+        性别：男身份：Kais-Papyrus的哥哥/兄弟<br>
+        年龄：22爱好：喜欢喝橙汁<br>
+        技能：真刀骨头(蓝橙白)、Gaster Blaster(龙骨炮)、重力控制与<br>
+        初始见面地：Snowdin雪镇<br>
+        来源：Sans与Gaster交易过后，Gaster在Sans的基础上，把原来的
+        Frisk的一些能力融合至Sans体内，使Sans有了真刀，眼睛变为蓝色，<br>
+        也拥有了控狱瞳，可是使用有副作用。他甚至因此获得了少许决心，也有一<br>
+        点上个时间线的记忆(原UT中的)，但不多<br>
+        性格特点：<br>
+        表面上看起来随性洒脱，甚至有些玩世不恭，常挂着懒洋洋的笑容，对很多<br>
+        事情都一副满不在乎的样子,但实际上，他内心敏感且重情，尤其是对<br>
+        Kais-Papyrus的关爱无微不至，只是不轻易表露。<br>
+        他有着自己的原则与底线，虽然看似对什么都不较真，但一旦涉及到关乎地<br>
+        下世界存亡或是亲人朋友的安危，他便会瞬间收起那副慵懒模样，展现出超<br>
+        乎常人的果敢与智慧，毫不犹豫地挺身而出。<br>
+        额外小设定：<br>
+        *Kais-sans首次出现在雪镇，且会有遭遇战<br>
+        *Kais-sans的蓝色审判眼由于体内发生的改变，而变成了红色的控狱瞳，而且<br>
+        Kais-sans使用控狱瞳的时间长的话会暂时失去理智且对身体带来巨大的副作用，<br>
+        一旦开始使用就是在慢慢地消耗生命，这是Gaster警告过地<br>
+        *Kais-sans与原版一样欠Grillby的钱<br>
+        *Kais-sans的围巾是Kais-Papyrus送的，在后续Kais-sans给它打了个<br>
+        结<br>
+        *Kais-sans可以利用真刀创造传送门然后瞬间移动（使用意念），可以在UPK内<br>
+        部传送，也可以传送到其他的AU，但是原UT的传送会被阻拦<br>
+        *Kais-sans在审判战的时候可以做到降低你的血量上限，也可以增加，只要他<br>
+        想<br>
+        *Kais-sans没有原版Sans那么懒，但是不勤快<br>
+        *Kais-sans讨厌AMONG US(蛤？)<br>
+        *Kais-sans有一次装睡时Kais-Papyrus要叫他的时被Kais-sans吓到了<br>
+        (草)<br>
+        *Kais-sans的重力控制可以控制自己的重力</p>
+        <h3 data-lang-zh="Kais-Papyrus" data-lang-en="Kais-Papyrus">Kais-Papyrus</h3>
+        <p data-lang-zh="姓名：Kais-Papyrus(凯斯-帕派瑞斯)
+        性别：男身份Kais-sans的弟弟/兄弟
+        年龄：17爱好：Kais-sans做的意大利面(自己做的吃完会被草飞)
+        技能：骨头(蓝橙白)、Gaster Blaster(每场战斗只能使用三次)、重力控制、
+        还有最酷的特殊攻击！！！(其实就是给主角一个滑板)
+        初始见面地：雪镇
+        来源：在不知情的情况下被改造了而已
+        性格特点：热情洋溢且天真单纯，无论面对何人何事，脸上总是洋溢着灿烂
+        的笑容，仿佛世间没有什么能够磨灭他的乐观。极具正义感，他每日刻苦训练，从不轻言放弃。
+        内心善良且轻信他人，虽然偶尔会因这份单纯而陷入困境，但也正是这种品
+        质，让他能毫无保留地接纳新朋友，如在面对玩家时，即便曾有过怀疑，可
+        一旦选择相信，便会全心全意地付出，给予帮助与支持。
+        额外小设定：
+        *Kais-Papyrus很崇拜自己的兄弟Kais-sans，尽管Kais-Papyrus只知
+        道他的部分能力
+        *Kais-Papyrus讨厌白色的神烦狗
+        *Kais-Papyrus的艺术塑造力很好
+        *Kais-Papyrus曾怀疑过玩家的存在，但是选择相信Kais-Frisk" data-lang-en="Replace with the exact English text for Kais - Frisk's character setting from the PDF">姓名：Kais-Papyrus(凯斯-帕派瑞斯)
+        性别：男身份Kais-sans的弟弟/兄弟<br>
+        年龄：17爱好：Kais-sans做的意大利面(自己做的吃完会被草飞)<br>
+        技能：骨头(蓝橙白)、Gaster Blaster(每场战斗只能使用三次)、重力控制、<br>
+        还有最酷的特殊攻击！！！(其实就是给主角一个滑板)<br>
+        初始见面地：雪镇<br>
+        来源：在不知情的情况下被改造了而已<br>
+        性格特点：热情洋溢且天真单纯，无论面对何人何事，脸上总是洋溢着灿烂<br>
+        的笑容，仿佛世间没有什么能够磨灭他的乐观。极具正义感，他每日刻苦训练，从不轻言放弃。<br>
+        内心善良且轻信他人，虽然偶尔会因这份单纯而陷入困境，但也正是这种品<br>
+        质，让他能毫无保留地接纳新朋友，如在面对玩家时，即便曾有过怀疑，可<br>
+        一旦选择相信，便会全心全意地付出，给予帮助与支持。<br>
+        额外小设定：<br>
+        *Kais-Papyrus很崇拜自己的兄弟Kais-sans，尽管Kais-Papyrus只知<br>
+        道他的部分能力<br>
+        *Kais-Papyrus讨厌白色的神烦狗<br>
+        *Kais-Papyrus的艺术塑造力很好<br>
+        *Kais-Papyrus曾怀疑过玩家的存在，但是选择相信Kais-Frisk<br>
+        <h3 data-lang-zh="K-Mettaton" data-lang-en="K-Mettaton">K-Mettaton</h3>
+        <p data-lang-zh="
+        姓名：K-Mettaton(K——镁塔顿)
+        性别：男身份：Alphy的杀人机器
+        年龄;未知
+        技能：强力激光、形态转换、魅惑电波
+        来源：Alphy制造的更强杀人机器
+        额外小设定：
+        *K-Mettaton极度在意自己的形象，战斗时会不定时的整理自己的头发
+        *K-Mettaton其实内心善良,虽然是杀人机器，但是除非被彻底激怒，
+        K-Mettaton是不会下死手的
+        *K-Mettaton嗅觉灵敏" data-lang-en="Replace with the exact English text for Kais - Frisk's character setting from the PDF">姓名：Kais-sans(凯斯-衫斯)
+        
+        姓名：K-Mettaton(K——镁塔顿)<br>
+        性别：男身份：Alphy的杀人机器<br>
+        年龄:未知<br>
+        技能：强力激光、形态转换、魅惑电波<br>
+        来源：Alphy制造的更强杀人机器<br>
+        额外小设定：<br>
+        *K-Mettaton极度在意自己的形象，战斗时会不定时的整理自己的头发<br>
+        *K-Mettaton其实内心善良,虽然是杀人机器，但是除非被彻底激怒，<br>
+        K-Mettaton是不会下死手的<br>
+        *K-Mettaton嗅觉灵敏</p>
+        <h3 data-lang-zh="Kais-Chara" data-lang-en="Kais-Chara">Kais-Chara</h3>
+        <p data-lang-zh="
+        *Kais-姓名：Kais-Chara(凯斯-查拉/凯斯-猹)
+        性别：男身份：Kais-Frisk的哥哥
+        年龄：19
+        来源：与原版一样，只是设定不同
+        额外小设定：
+        *Kais-Chara与Kais-Frisk的关系并不太好但是都不讨厌对方" data-lang-en="Replace with the exact English text for Kais - Frisk's character setting from the PDF">姓名：Kais-sans(凯斯-衫斯)
+        姓名：Kais-Chara(凯斯-查拉/凯斯-猹)<br>
+        性别：男身份：Kais-Frisk的哥哥<br>
+        年龄：19<br>
+        来源：与原版一样，只是设定不同<br>
+        额外小设定：<br>
+        *Kais-Chara与Kais-Frisk的关系并不太好但是都不讨厌对方</p>
+        <h2 data-lang-zh="线路设定" data-lang-en="Settings">线路设定</h2>
+        <h3 data-lang-zh="中立路线" data-lang-en="中立路线">中立路线</h3>
+
+        <p data-lang-zh="
+        
+        *与原版ut差不多，但不用打六魂花(ASGORE打完直接被重置)" data-lang-en="Replace with the exact English text for Kais - Frisk's character setting from the PDF">姓名：Kais-sans(凯斯-衫斯)
+        与原版ut差不多，但不用打六魂花(ASGORE打完直接被重置)</p>
+        <h3 data-lang-zh="和平伪善" data-lang-en="和平伪善">和平伪善</h3>
+        <p data-lang-zh="
+        
+        *与原版ut差不多，不过你不用打ASRIEL DREAMUER(小羊)，在与ASGORE的战斗中后面会有人来援助" data-lang-en="Replace with the exact English text for Kais - Frisk's character setting from the PDF">姓名：Kais-sans(凯斯-衫斯)
+        与原版ut差不多，不过你不用打ASRIEL DREAMUER(小羊)，在与ASGORE的战斗中后面会有人来援助</p>
+
+        <h3 data-lang-zh="屠杀路线" data-lang-en="屠杀路线">屠杀路线</h3>
+        <p data-lang-zh="
+    
+        遗迹：
+        开局赶走Toriel(在小花教学时)，杀光遗迹中的所有怪(得到玩具刀)
+        漏一个怪物直接变回中立线路
+        最终遇到Toriel，由于Kais-sans与Toriel交流过，所以她不会对你手下留
+        情，她会发挥出她所有的战斗力，但是最后玩家马上要杀死她的时候，Kais-sans
+        用骨头挡下了攻击，可是玩家在Kais-sans不注意的时候把Toriel杀了，
+        Kais-sans消失了
+        目标：杀死Toriel(这次她并不会对你手下留情)
+        雪镇：
+        走出遗迹大门，你不会像其他路线那样遭遇Kais-sans
+        遇到了Kais-Papyrus(他会问你Kais-sans去了哪里)
+        杀死雪镇中的所有怪
+        漏一个怪物直接变回中立线路
+        目标：杀死Kais-Papyrus(他此时也会意识到事情的严重性等级升到LV9)
+        杀死Kais-Papyrus之后，K-Mettaton来到了雪镇巡演(是Gaster故意安排
+        的)，但是这里不管是什么线路K-Mettaton都不会完全杀死你。过场动画
+        Gaster与Alphys提醒衫斯在瀑布的某个区域中有一把真刀，叫他尽快拿上去以
+        阻拦人类
+        瀑布：
+        杀死这里仅有的一只怪(因为其他的怪物都在Kais-sans后面的区域)
+        不杀就变为中立
+        最终触发Kais-sans的审判战(分有两个阶段)
+        目标：杀死Kais-sans
+        Gaster出现，强行重置并暗示玩家再来一次就会有新结局，屠杀线路到此结束" data-lang-en="Replace with the exact English text for Kais - Frisk's character setting from the PDF">姓名：Kais-sans(凯斯-衫斯)
+        遗迹：<br>
+        开局赶走Toriel(在小花教学时)，杀光遗迹中的所有怪(得到玩具刀)<br>
+        漏一个怪物直接变回中立线路<br>
+        最终遇到Toriel，由于Kais-sans与Toriel交流过，所以她不会对你手下留<br>
+        情，她会发挥出她所有的战斗力，但是最后玩家马上要杀死她的时候，Kais-sans<br>
+        用骨头挡下了攻击，可是玩家在Kais-sans不注意的时候把Toriel杀了，<br>
+        Kais-sans消失了<br>
+        目标：杀死Toriel(这次她并不会对你手下留情)<br>
+        雪镇：<br>
+        走出遗迹大门，你不会像其他路线那样遭遇Kais-sans<br>
+        遇到了Kais-Papyrus(他会问你Kais-sans去了哪里)<br>
+        杀死雪镇中的所有怪<br>
+        漏一个怪物直接变回中立线路<br>
+        目标：杀死Kais-Papyrus(他此时也会意识到事情的严重性等级升到LV9)<br>
+        杀死Kais-Papyrus之后，K-Mettaton来到了雪镇巡演(是Gaster故意安排<br>
+        的)，但是这里不管是什么线路K-Mettaton都不会完全杀死你。过场动画<br>
+        Gaster与Alphys提醒衫斯在瀑布的某个区域中有一把真刀，叫他尽快拿上去以<br>
+        阻拦人类<br>
+        瀑布：<br>
+        杀死这里仅有的一只怪(因为其他的怪物都在Kais-sans后面的区域)<br>
+        不杀就变为中立<br>
+        最终触发Kais-sans的审判战(分有两个阶段)<br>
+        目标：杀死Kais-sans<br>
+        Gaster出现，强行重置并暗示玩家再来一次就会有新结局，屠杀线路到此结束</p>
+        <h3 data-lang-zh="真重置路线" data-lang-en="真重置路线">真重置路线</h3>
+        <p data-lang-zh="
+        
+        选择...:
+        忏悔(触发忏悔线路)死性不改(正式进入真重置线路)
+        遗迹：
+        再次遇到小花，此时二者不再敌对，而是携手共进。面对Gaster对玩家
+        的重重阻挠，小花凭借自身特殊能力（如知晓地下世界隐藏通道、破解部分
+        魔法陷阱等）协助玩家前行，需要在遗迹中，躲避或破解Gaster设下的
+        机关
+        雪镇：
+        当玩家来到雪镇，这里已被Gaster施加了诡异的魔法笼罩，原本温馨的
+        雪镇房屋都笼罩在一层诡异的雾气之中。Kais-sans和
+        Kais-Papyrus也受到影响，Kais-sans的控狱瞳出现不稳定闪烁，力
+        量时而失控，他对玩家的警惕性达到前所未有的高度，时刻准备再次开启审
+        判，以防玩家继续作恶。Kais-Papyrus则陷入迷茫，一方面担心兄长，
+        一方面又察觉到雪镇的异样，他试图寻找真相，若玩家此时靠近，他会比以
+        往更加谨慎，甚至会先发动试探性攻击，判断玩家的意图。瀑布：
+        瀑布区域水流湍急因Gaster部分水道被魔法屏障封锁，玩家无法按照常
+        规路线前行。水中还潜伏着由Gaster的实验被制造出的怪物。
+        在此区域怪物们有的被Gaster控制，有的则寻找安全之地。而那些寻求
+        庇护的怪物，在慌乱逃窜中偶尔会给玩家透露一些Gaster力量的弱点线
+        索，比如提到某个区域的魔法屏障在特定时刻会出现能量波动。玩家与
+        Gaster的对抗愈发激烈，每一步都充满生死考验。最终对决：
+        历经重重磨难，玩家终于直面Gaster。就在玩家感到绝望之时，
+        Kais-Chara突然现身，虽然他肉体已死，但是他一直在暗中关注着玩家
+        的一举一动，虽对玩家之前的屠杀行径痛心疾首，也和Frisk关系不好，可
+        是为了地下世界的未来，他决定出手相助。Kais-Chara拥有独特的力量，
+        能够为玩家创造反击机会。他身形矫健，手持一把散发着幽光的利刃，冲向
+        Gaster，与玩家并肩作战。
+        战斗前期，Gaster施展强大的魔法护盾，抵挡玩家与Kais-Chara的
+        联合攻击，用武器攻击其护盾薄弱处；Kais-Chara则利用特殊力量，在
+        Gaster施法空隙，给予他出其不意的打击，试图打破他的魔法节奏。，
+        Gaster恼羞成怒，使出全力发动一系列致命攻击，，玩家与
+        Kais-Chara渐感不支，生命值急剧下降。
+        关键时刻，Kais-Chara将自己的力量全部注入玩家体内，与玩家的灵魂
+        产生共鸣，激发了玩家潜藏的超强能力。(代价是慢性死亡)玩家感受到这股
+        力量后，眼神变得坚毅，操控着全新的力量，对Gaster发起了最后的冲
+        锋。在一连串猛烈攻击下，Gaster的魔法护盾终于破碎，他没想到这点，
+        露出了惊恐的表情，而玩家抓住这稍纵即逝的机会，给予Gaster致命一
+        击。
+        随着Gaster的倒下，地下世界陷入了短暂的平静，但也满目疮痍。
+        Kais-Chara因力量耗尽，瘫倒在地，玩家赶忙上前扶住他。此时，玩家
+        环顾四周，曾经美丽的地下世界如今一片狼藉，那些熟悉的场景、友善的怪
+        物都不复存在，只剩残垣断壁与悲伤弥漫。游戏标题改为undertale浮现
+        出一串字幕：“这场胜利，代价惨重。你所犯下的过错，已深深烙印在这片
+        土地。但在黑暗尽头，一丝希望尚存，忏悔吧，用未来的行动去弥补……” " data-lang-en="Replace with the exact English text for Kais - Frisk's character setting from the PDF">姓名：Kais-sans(凯斯-衫斯)
+        选择...:<br>
+        忏悔(触发忏悔线路)死性不改(正式进入真重置线路)<br>
+        遗迹：<br>
+        再次遇到小花，此时二者不再敌对，而是携手共进。面对Gaster对玩家<br>
+        的重重阻挠，小花凭借自身特殊能力（如知晓地下世界隐藏通道、破解部分<br>
+        魔法陷阱等）协助玩家前行，需要在遗迹中，躲避或破解Gaster设下的<br>
+        机关<br>
+        雪镇：<br>
+        当玩家来到雪镇，这里已被Gaster施加了诡异的魔法笼罩，原本温馨的<br>
+        雪镇房屋都笼罩在一层诡异的雾气之中。Kais-sans和<br>
+        Kais-Papyrus也受到影响，Kais-sans的控狱瞳出现不稳定闪烁，力<br>
+        量时而失控，他对玩家的警惕性达到前所未有的高度，时刻准备再次开启审<br>
+        判，以防玩家继续作恶。Kais-Papyrus则陷入迷茫，一方面担心兄长，<br>
+        一方面又察觉到雪镇的异样，他试图寻找真相，若玩家此时靠近，他会比以<br>
+        往更加谨慎，甚至会先发动试探性攻击，判断玩家的意图。瀑布：<br>
+        瀑布区域水流湍急因Gaster部分水道被魔法屏障封锁，玩家无法按照常<br>
+        规路线前行。水中还潜伏着由Gaster的实验被制造出的怪物。<br>
+        在此区域怪物们有的被Gaster控制，有的则寻找安全之地。而那些寻求<br>
+        庇护的怪物，在慌乱逃窜中偶尔会给玩家透露一些Gaster力量的弱点线<br>
+        索，比如提到某个区域的魔法屏障在特定时刻会出现能量波动。玩家与<br>
+        Gaster的对抗愈发激烈，每一步都充满生死考验。最终对决：<br>
+        历经重重磨难，玩家终于直面Gaster。就在玩家感到绝望之时，<br>
+        Kais-Chara突然现身，虽然他肉体已死，但是他一直在暗中关注着玩家<br>
+        的一举一动，虽对玩家之前的屠杀行径痛心疾首，也和Frisk关系不好，可<br>
+        是为了地下世界的未来，他决定出手相助。Kais-Chara拥有独特的力量，<br>
+        能够为玩家创造反击机会。他身形矫健，手持一把散发着幽光的利刃，冲向<br>
+        Gaster，与玩家并肩作战。<br>
+        战斗前期，Gaster施展强大的魔法护盾，抵挡玩家与Kais-Chara的<br>
+        联合攻击，用武器攻击其护盾薄弱处；Kais-Chara则利用特殊力量，在<br>
+        Gaster施法空隙，给予他出其不意的打击，试图打破他的魔法节奏。，<br>
+        Gaster恼羞成怒，使出全力发动一系列致命攻击，，玩家与<br>
+        Kais-Chara渐感不支，生命值急剧下降。<br>
+        关键时刻，Kais-Chara将自己的力量全部注入玩家体内，与玩家的灵魂<br>
+        产生共鸣，激发了玩家潜藏的超强能力。(代价是慢性死亡)玩家感受到这股<br>
+        力量后，眼神变得坚毅，操控着全新的力量，对Gaster发起了最后的冲<br>
+        锋。在一连串猛烈攻击下，Gaster的魔法护盾终于破碎，他没想到这点，<br>
+        露出了惊恐的表情，而玩家抓住这稍纵即逝的机会，给予Gaster致命一<br>
+        击。<br>
+        随着Gaster的倒下，地下世界陷入了短暂的平静，但也满目疮痍。<br>
+        Kais-Chara因力量耗尽，瘫倒在地，玩家赶忙上前扶住他。此时，玩家<br>
+        环顾四周，曾经美丽的地下世界如今一片狼藉，那些熟悉的场景、友善的怪<br>
+        物都不复存在，只剩残垣断壁与悲伤弥漫。游戏标题改为undertale浮现<br>
+        出一串字幕：“这场胜利，代价惨重。你所犯下的过错，已深深烙印在这片<br>
+        土地。但在黑暗尽头，一丝希望尚存，忏悔吧，用未来的行动去弥补……” </p>
+        <h3 data-lang-zh="救赎路线" data-lang-en="救赎路线">中立路线</h3>
+
+        <p data-lang-zh="
+        
+        起始抉择：
+        首次屠杀线后重启选 “忏悔”，开启救赎路，玩家因愧疚想改变地下世界命运。屏幕上显示救赎线开始
+
+        遗迹探索：
+        回遗迹，怪物警惕，玩家友善交流、助人赢信任，如帮被困怪物得符文碎片，还能发现刻有 Gaster 计划信息的奇怪符号，找智慧长者得知指向遗迹密室。
+
+        密室解谜：
+        进密室有魔法装置、符文，中央水晶球有 Gaster 作恶模糊影像，需找解密符文看清。此时要抉择：独自拿证据对抗，或分享线索组联盟，影响后续支援与怪物态度。
+
+        雪镇危机：
+        到雪镇，Kais-sans 和 Kais-Papyrus 因 Gaster 有困境，玩家找线索时发现 Gaster 监控记录，知其计划漏洞，由于Gaster在Sans不注意的时候对其施了法术，但是Gaster急于求成，忽略了一个古老法则：在地下世界的传说中，有一种被称为 “灵犀之心” 的神秘力量，只有在真心悔过且心怀大爱的人身上才会觉醒。因为玩家在忏悔路上的善良，灵眸之心已经悄然在玩家身上显现
+        面临抉择：直接利用漏洞攻 Gaster可能致雪镇大难，先修复与两兄弟关系借力，需解误会说服他们。
+
+        瀑布觉醒：
+        经雪镇波折到瀑布，玩家组织怪物反抗 Gaster 控制，凑齐证据，知到了Gaster其实是想要以Sans的肉体为容器，来帮助Gaster成为神， 他 想打破维度界限引力量，危及地下世界，玩家意识到严重性很害怕。
+
+        最终决战：
+        玩家带证据找 Kais-sans 坦白，他起初怀疑，看证据后联手，和各区域赶来怪物一起决战，可没想到的是Gaster早就想到了这一点，所以早在Sans身上施了法术，随之Kais-sans马上就要变为一具空壳，灵魂也随之慢慢消散，Kais-sans与Frisk击拳，答应一定要就会地底世界，说完，Gaster吸取Sans的能量。进入了最终决战第一阶段，此时他们还没有完全融合。随着时间的推移，战斗还是没有胜者，可是Kais-sans与Gaster此时已经几乎完全融合，此时玩家的绝望感达到了极点，可就在此时Kais-Chara的灵魂出现，与玩家一同阻止Gaster。此时Gaster处于下风，正在这时，Kais-sans之前被G注入的决心觉醒了，开始反击Gaster，在这时Kais-Frisk与Kais-Chara兄妹两找到了Gaster施展魔法的空隙用智慧结合各方力量，打赢了Gaster救地下世界，强大的力量也将结界摧毁，怪物们走出了地底世界，可是...Sans再也回不来了，Sans与Gaster共同被玩家的封印封印在地底中。" data-lang-en="Replace with the exact English text for Kais - Frisk's character setting from the PDF">
+        起始抉择：<br>
+        首次屠杀线后重启选 “忏悔”，开启救赎路，玩家因愧疚想改变地下世界命运。屏幕上显示救赎线开始<br>
+        
+        遗迹探索：<br>
+        回遗迹，怪物警惕，玩家友善交流、助人赢信任，如帮被困怪物得符文碎片，还能发现刻有 Gaster 计划信息的奇怪符号，找智慧长者得知指向遗迹密室。<br>
+        
+        密室解谜：<br>
+        进密室有魔法装置、符文，中央水晶球有 Gaster 作恶模糊影像，需找解密符文看清。此时要抉择：独自拿证据对抗，或分享线索组联盟，影响后续支援与怪物态度。<br>
+        
+        雪镇危机：<br>
+        到雪镇，Kais-sans 和 Kais-Papyrus 因 Gaster 有困境，玩家找线索时发现 Gaster 监控记录，知其计划漏洞，由于Gaster在Sans不注意的时候对其施了法术，但是Gaster急于求成，忽略了一个古老法则：在地下世界的传说中，有一种被称为 “灵犀之心” 的神秘力量，只有在真心悔过且心怀大爱的人身上才会觉醒。因为玩家在忏悔路上的善良，灵眸之心已经悄然在玩家身上显现<br>
+        面临抉择：直接利用漏洞攻 Gaster可能致雪镇大难，先修复与两兄弟关系借力，需解误会说服他们。<br>
+        
+        瀑布觉醒：<br>
+        经雪镇波折到瀑布，玩家组织怪物反抗 Gaster 控制，凑齐证据，知到了Gaster其实是想要以Sans的肉体为容器，来帮助Gaster成为神， 他 想打破维度界限引力量，危及地下世界，玩家意识到严重性很害怕。<br>
+        
+        最终决战：<br>
+        玩家带证据找 Kais-sans 坦白，他起初怀疑，看证据后联手，和各区域赶来怪物一起决战，可没想到的是Gaster早就想到了这一点，所以早在Sans身上施了法术，随之Kais-sans马上就要变为一具空壳，灵魂也随之慢慢消散，Kais-sans与Frisk击拳，答应一定要就会地底世界，说完，Gaster吸取Sans的能量。进入了最终决战第一阶段，此时他们还没有完全融合。随着时间的推移，战斗还是没有胜者，可是Kais-sans与Gaster此时已经几乎完全融合，此时玩家的绝望感达到了极点，可就在此时Kais-Chara的灵魂出现，与玩家一同阻止Gaster。此时Gaster处于下风，正在这时，Kais-sans之前被G注入的决心觉醒了，开始反击Gaster，在这时Kais-Frisk与Kais-Chara兄妹两找到了Gaster施展魔法的空隙用智慧结合各方力量，打赢了Gaster救地下世界，强大的力量也将结界摧毁，怪物们走出了地底世界，可是...Sans再也回不来了，Sans与Gaster共同被玩家的封印封印在地底中。</p>
+
+        <!-- 其他人物设定和线路设定部分同理替换 -->
+    </div>
     <script>
         const languageToggle = document.getElementById('language-toggle');
         const languageList = document.getElementById('language-list');
@@ -335,6 +710,8 @@
         const elements = document.querySelectorAll('[data-lang-zh]');
         const navLinks = document.querySelectorAll('nav ul li a');
         const downloadSection = document.getElementById('download');
+        const storySettingSection = document.getElementById('game-story-and-setting');
+        const showStorySettingLink = document.getElementById('show-story-setting');
         let currentLang = 'zh';
 
         // 游戏截图切换功能
@@ -385,25 +762,35 @@
 
                 elements.forEach(element => {
                     if (lang === 'zh') {
-                        element.textContent = element.getAttribute('data-lang-zh');
+                        element.innerHTML = element.getAttribute('data-lang-zh');
                     } else {
-                        element.textContent = element.getAttribute('data-lang-en');
+                        element.innerHTML = element.getAttribute('data-lang-en');
                     }
+                    // 处理实体编码问题
+                    element.innerHTML = element.innerHTML.replace(/&lt;br&gt;/g, '<br>');
                 });
 
-                // 重新处理中文字符
-                const textElements = document.querySelectorAll('h1, h2, p, a');
+                // 重新处理中文字符，特殊处理 <br> 标签
+                const textElements = document.querySelectorAll('h1, h2, h3, p');
                 textElements.forEach(element => {
                     const html = element.innerHTML;
+                    const parts = html.split('<br>');
                     let newHtml = '';
-                    for (let i = 0; i < html.length; i++) {
-                        const char = html[i];
-                        if (/[\u4e00-\u9fa5]/.test(char)) {
-                            newHtml += `<span class="chinese-char">${char}</span>`;
-                        } else {
-                            newHtml += char;
+                    parts.forEach((part, index) => {
+                        let newPart = '';
+                        for (let i = 0; i < part.length; i++) {
+                            const char = part[i];
+                            if (/[\u4e00-\u9fa5]/.test(char)) {
+                                newPart += `<span class="chinese-char">${char}</span>`;
+                            } else {
+                                newPart += char;
+                            }
                         }
-                    }
+                        newHtml += newPart;
+                        if (index < parts.length - 1) {
+                            newHtml += '<br>';
+                        }
+                    });
                     element.innerHTML = newHtml;
                 });
 
@@ -439,8 +826,13 @@
 
                 if ((currentLang === 'zh' && this.textContent === '下载中心') || (currentLang === 'en' && this.textContent === 'Downloads')) {
                     downloadSection.style.display = 'block';
+                    storySettingSection.style.display = 'none';
+                } else if ((currentLang === 'zh' && this.textContent === '游戏剧情及设定集') || (currentLang === 'en' && this.textContent === 'Game Story & Setting')) {
+                    storySettingSection.style.display = 'block';
+                    downloadSection.style.display = 'none';
                 } else {
                     downloadSection.style.display = 'none';
+                    storySettingSection.style.display = 'none';
                 }
             });
         });
@@ -450,19 +842,27 @@
             document.body.classList.add('loaded');
         });
 
-        // 处理中文字符间距
-        const textElements = document.querySelectorAll('h1, h2, p, a');
+        // 处理中文字符间距，特殊处理 <br> 标签
+        const textElements = document.querySelectorAll('h1, h2, h3, p');
         textElements.forEach(element => {
             const html = element.innerHTML;
+            const parts = html.split('<br>');
             let newHtml = '';
-            for (let i = 0; i < html.length; i++) {
-                const char = html[i];
-                if (/[\u4e00-\u9fa5]/.test(char)) {
-                    newHtml += `<span class="chinese-char">${char}</span>`;
-                } else {
-                    newHtml += char;
+            parts.forEach((part, index) => {
+                let newPart = '';
+                for (let i = 0; i < part.length; i++) {
+                    const char = part[i];
+                    if (/[\u4e00-\u9fa5]/.test(char)) {
+                        newPart += `<span class="chinese-char">${char}</span>`;
+                    } else {
+                        newPart += char;
+                    }
                 }
-            }
+                newHtml += newPart;
+                if (index < parts.length - 1) {
+                    newHtml += '<br>';
+                }
+            });
             element.innerHTML = newHtml;
         });
     </script>
